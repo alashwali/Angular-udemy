@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <button class="btn btn-primary" (click)="onToggleDetails()">
+      show password
+    </button>
+    <p *ngIf="showPassword">Password = tuna</p>
+    <div *ngFor="let logItem of log" [ngClass]="{ textColor: logItem >= 5 }">
+      {{ logItem }}
+    </div>
+  </div>
+</div>
